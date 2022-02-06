@@ -10,4 +10,15 @@ public class selectionSort {
             }
         }
     }
+    public static void rSort(int[] arr){
+
+
+         //       if (arr[j] < arr[i]){
+           //         int temp = arr[i];
+             //       arr[i] = arr[j];
+               //     arr[j] = temp;
+                //}
+
+
+    }
 }

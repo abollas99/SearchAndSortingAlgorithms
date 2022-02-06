@@ -1,13 +1,17 @@
 
 public class speedTest {
     public static void main(String[] args){
-        int[] arr = createArray(10000);
+        int[] arr = createArray(1000000);
+        int low = 0;
+        int high = arr.length - 1;
+        int key = 25;
         long begin, end, time;
+        //selectionSort.sort(arr);
         begin = System.nanoTime();
-        selectionSort.sort(arr);
+        quickSort.sort(arr ,low, high);
         end = System.nanoTime();
         time = end - begin;
-        System.out.println("Program took " + time + " nano seconds to run");
+        System.out.println("Recursive Binary Search took " + time + " nano seconds to run");
     }
     public static int[] createArray(int arrSize){
         int[] arr = new int[arrSize];
